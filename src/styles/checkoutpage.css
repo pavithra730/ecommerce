@@ -1,0 +1,31 @@
+.checkout-page {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+  }
+  .checkout-page p{
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .checkout-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .checkout-btn:hover {
+    background-color: darkgreen;
+  }
+  
