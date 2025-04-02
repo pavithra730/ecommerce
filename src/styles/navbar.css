@@ -16,6 +16,23 @@
 .glam img{
    width: 75px;
    border-radius: 50%;
+   padding: 10px;
+   animation: swing 2s infinite;
+   transition:all 1s;
+}
+
+@keyframes swing{
+  0% {
+    transform: rotate(0deg);
+    transform: scale(1.1);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+
 }
 .nav-links{
     display: flex;
@@ -29,9 +46,11 @@
     transition: 0.3s;
     text-decoration: none;
     font-size: 24px;
+    padding: 15px;
 }
 .nav-links li a:hover{
-    color: #ffcc00;
+    color: #201e1e;
+    background-color:  rgb(78, 231, 78) ;
 }
 .menu-icon {
     font-size: 24px;
@@ -42,18 +61,19 @@
   @media (max-width: 768px) {
     .menu-icon {
       display: block;
+      padding: 10px;
     }
   
     .nav-links {
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 84px;
+      top: 68px;
       right: 0;
-      left: 9px;
+      left: 2px;
       background-color: #333;
       width: 94%;
-      padding: 10px;
+      padding: 25px;
     }
   
     .nav-links.open {

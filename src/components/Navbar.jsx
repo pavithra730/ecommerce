@@ -19,8 +19,9 @@ export const Navbar = () => {
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li onClick={() => setMenuOpen(!menuOpen)}><Link to="/">Home</Link></li>
           <li onClick={() => setMenuOpen(!menuOpen)}><Link to="/productlist">Products</Link></li>
-          <li onClick={() => setMenuOpen(!menuOpen)}><Link to="/cartpage">CartPage</Link></li>
-          <li onClick={() => setMenuOpen(!menuOpen)}><Link to="/checkoutpage">Checkoutpage</Link></li>
+          <li onClick={() => setMenuOpen(!menuOpen)}><Link to="/cartpage">Cart</Link></li>
+          <li onClick={() => setMenuOpen(!menuOpen)}><Link to="/checkoutpage">Checkout</Link></li>
+          <li onClick={() => setMenuOpen(!menuOpen)}><Link to="/about">About Us</Link></li>
         </ul>
     </nav>
   )
