@@ -18,7 +18,7 @@ export const ProductCard = ({product}) => {
         <img src={product.image} alt={product.name} />
         <h3>{product.name}</h3>
         <p>&#8377;{product.price}</p>
-        <button className='btn' onClick={handleAddToCart}><span onClick={()=>setAdded(true)} className='cart-button' style={{fontWeight:'bold'}}>{added?"Added✅" : "Add to Cart 🛒"}</span></button>
+        <button className='btn' onClick={()=>setAdded(true)} onDoubleClick={handleAddToCart}><span className='cart-button' style={{fontWeight:'bold'}}>{added?"Added✅" : "Add to Cart 🛒"}</span></button>
     
     </div>
   )

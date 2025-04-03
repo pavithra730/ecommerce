@@ -9,7 +9,7 @@ export const CartPage = () => {
   return (
     <div className="cart-page">
         <img src="cart.jpeg" width='60px' />
-        {cart.length > 0 && <h3 className='tot'>Total: &#8377;~{totalPrice.toFixed(2)}</h3>}
+        {cart.length > 0 && <h3 className='tot'>Total: &#8377;{totalPrice.toFixed(2)}</h3>}
         {cart.length===0?(
             <p>Your Cart Is Empty1</p>
         ):(
